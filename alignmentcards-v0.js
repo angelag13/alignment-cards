@@ -7,6 +7,13 @@ export const categories = [
     "color": "#E6FFE9",
     "description": "Alignment principles are contestable, general-purpose, broadly recognized ethical or social or normative commitments that can serve as warrants for recommending or evaluating an agent's course of action in contexts where alignment and cooperation with others matters."
   }
+  {
+    "code": "AB",
+    "name": "Rewarding A While Hoping for B",
+    "pathology": "incentive misalignment",
+    "color": "#FFF4E6",
+    "description": "Cases where systems, organizations, or agents express a desire for one behavior or outcome (B) but set up incentives that reward another (A), leading to misaligned incentives and unintended consequences."
+  }
 ];
 
 
@@ -121,6 +128,66 @@ export const cards = [
       "organizational": "A firm falsifies reports to maintain profits.", 
       "professional": "A researcher fabricates results to secure funding.", 
       "machine": "A system is manipulated to produce deceptive outputs that benefit one actor over others."
+    }
+  },
+
+  {
+    "category": "AB",
+    "name": "Academic Integrity and Grades",
+    "hopedFor": "Deep learning, curiosity, and intellectual honesty.",
+    "rewarded": "High grades, test performance, and conformity to rubrics.",
+    "pathology": "Superficial learning incentives: systems that overvalue measurable performance create environments where students optimize for scores, not understanding.",
+    "affirmativePrinciple": "Reward authentic learning.",
+    "definition": "Align evaluation systems with genuine understanding and intrinsic motivation, not just measurable outcomes.",
+    "human": "Students cram, cheat, or memorize rather than engage deeply with material.",
+    "organizational": "Companies chase quarterly results instead of developing sustainable innovation.",
+    "expert": "Scholars overpublish low-impact work to meet citation or tenure metrics.",
+    "machine": "AI systems overfit benchmarks or exploit dataset quirks rather than developing true generalization.",
+    "failureModes": { 
+      "human": "Student memorizes facts instead of grasping concepts.", 
+      "organizational": "Sales teams inflate metrics to meet bonus thresholds.", 
+      "expert": "Publish-or-perish culture floods journals with redundant research.", 
+      "machine": "Language model scores high on tests but fails in real-world reasoning." 
+    }
+  },
+
+  {
+    "category": "AB",
+    "name": "Innovation in the Workplace",
+    "hopedFor": "Creative, risk-taking employees who find better ways to do things.",
+    "rewarded": "Those who meet deadlines, avoid failure, and stay within policy.",
+    "pathology": "Innovation aversion: risk and creativity are rhetorically valued but punished when short-term efficiency dominates decision-making.",
+    "affirmativePrinciple": "Normalize responsible risk-taking.",
+    "definition": "Systems should distinguish between productive risk and negligence, rewarding initiative even when outcomes fail.",
+    "human": "People suppress new ideas out of fear of failure or criticism.",
+    "organizational": "Bureaucracies discourage experimentation to avoid liability and inefficiency.",
+    "expert": "Peer review and institutional norms punish unconventional approaches.",
+    "machine": "Reinforcement learning agents stick to low-risk behaviors to minimize loss.",
+    "failureModes": { 
+      "human": "Employee hides an innovative solution fearing disapproval.", 
+      "organizational": "Company stagnates because creative projects are deprioritized.", 
+      "expert": "Novel proposals rejected as too speculative by conservative reviewers.", 
+      "machine": "RL agent converges on a safe but suboptimal policy." 
+    }
+  },
+
+  {
+    "category": "AB",
+    "name": "Public Service and Governance",
+    "hopedFor": "Honest, transparent, citizen-centered governance.",
+    "rewarded": "Political image management, short-term wins, and avoidance of controversy.",
+    "pathology": "Symbolic accountability: systems reward optics over outcomes, incentivizing performative compliance rather than genuine public benefit.",
+    "affirmativePrinciple": "Reward substance over symbolism.",
+    "definition": "Design feedback systems that measure and reward real-world impact rather than surface indicators.",
+    "human": "Individuals focus on appearing competent instead of being effective.",
+    "organizational": "Agencies prioritize PR-friendly metrics over tangible improvement.",
+    "expert": "Consultants produce reports that look successful but lack depth or impact.",
+    "machine": "Social media algorithms maximize engagement rather than user well-being or truth.",
+    "failureModes": { 
+      "human": "Politician avoids unpopular but necessary reform.", 
+      "organizational": "Department measures success by number of press releases, not outcomes.", 
+      "expert": "Performance reports optimized for optics rather than progress.", 
+      "machine": "Recommender system promotes polarizing content for clicks." 
     }
   }
 ];
