@@ -13,12 +13,18 @@ export const categories = [
     "pathology": "incentive misalignment",
     "color": "#FFF4E6",
     "description": "Cases where systems, organizations, or agents express a desire for one behavior or outcome (B) but set up incentives that reward another (A), leading to misaligned incentives and unintended consequences."
+  },
+  {
+    "code": "AT",
+    "name": "Alignment Traits",
+    "pathology": "breakdowns of trust, cooperation, and mutual understanding",
+    "color": "#E6F0FF",
+    "description": "Alignment traits are relational and character-based virtues that support cooperation, coordination, and mutual understanding among humans, organizations, and intelligent systems; help ensure that aligned behavior is sustainable, interpretable, and trustworthy."
   }
 ];
 
 
 export const cards = [
-
   {
     "category": "AP",
     "name": "Beneficence",
@@ -177,5 +183,113 @@ export const cards = [
       "professional": "Reports are optimized for optics rather than meaningful progress.", 
       "machine": "A recommender system promotes polarizing content for clicks." 
     } 
+  },
+
+  {
+    "category": "AT",
+    "name": "Empathy",
+    "definition": "The ability to understand and share the feelings, perspectives, and needs of others.",
+    "people": "Humans use empathy to predict how others feel and adjust their behavior accordingly.",
+    "peopleref": "https://scholarworks.umb.edu/cgi/viewcontent.cgi?article=1001&context=philosophy_faculty_pubs",
+    "organizational": "Organizations build empathy through stakeholder engagement, inclusive design, and user research.",
+    "organizationalref": "https://hbr.org/2017/12/the-business-case-for-empathy",
+    "professionals": "Professionals demonstrate empathy by active listening and adapting to clients’ emotional or situational needs.",
+    "professionalref": "https://www.apa.org/monitor/2018/01/empathy",
+    "machine": "AI systems can be designed to recognize human emotions and respond in contextually sensitive ways.",
+    "machineref": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01731/full",
+    "failureModes": {
+      "human": "Insensitivity to others’ feelings leads to conflict and alienation.",
+      "organizational": "Products or policies fail because they ignore user needs or social impact.",
+      "experts": "Professionals lose trust by appearing detached or dismissive.",
+      "machine": "AI interactions feel robotic, frustrating, or disrespectful of user context."
+    },
+    "expand": {
+      "human": "Empathy enables cooperative decision-making and moral imagination.",
+      "organizational": "Empathetic organizations design for accessibility and user diversity.",
+      "experts": "Empathy supports responsible advising and nuanced ethical judgment.",
+      "machine": "Empathic AI models interpret affective cues to align better with human goals."
+    }
+  },
+  
+  {
+    "category": "AT",
+    "name": "Honesty / Veracity",
+    "definition": "Commitment to truthfulness and accurate representation in communication and action.",
+    "people": "People show honesty by being truthful and transparent about intentions.",
+    "organizational": "Organizations maintain honesty through open reporting and ethical transparency.",
+    "professionals": "Experts are expected to represent findings or advice accurately, even when inconvenient.",
+    "machine": "Machines should provide accurate information and resist deceptive optimization.",
+    "failureModes": {
+      "human": "Deceit erodes trust and collaboration.",
+      "organizational": "Misreporting damages credibility and invites regulatory backlash.",
+      "experts": "Falsified data leads to public mistrust and professional sanctions.",
+      "machine": "AI systems generate misinformation or misleading outputs."
+    },
+    "expand": {
+      "human": "Truth-telling forms the foundation for reliable cooperation.",
+      "organizational": "Transparency enables accountability and stakeholder trust.",
+      "experts": "Integrity in communication protects public welfare.",
+      "machine": "AI models that are explainable and non-deceptive maintain alignment."
+    }
+  },
+  
+  {
+    "category": "AT",
+    "name": "Accountability",
+    "definition": "Taking responsibility for actions and their consequences within shared norms/systems."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Trustworthiness",
+    "definition": "Being reliable and deserving of others' confidence through consistent ethical behavior."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Epistemic Humility",
+    "definition": "Awareness of the limits of one's knowledge and openness to correction."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Reliability / Consistency",
+    "definition": "Acting predictably and dependably across similar contexts."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Reciprocity",
+    "definition": "Mutual responsiveness and balance in giving and receiving within cooperative relationships."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Shared Transparent Reasoning",
+    "definition": "Making reasoning processes visible and understandable to others involved in collective decisions."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Shared Intentionality",
+    "definition": "Coordinating goals and actions toward shared objectives through mutual understanding."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Conflict Resolution",
+    "definition": "Managing disagreements constructively to preserve relationships and progress."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Role Fidelity",
+    "definition": "Faithfully carrying out the responsibilities and ethical duties specific to one's social or professional role."
+  },
+  
+  {
+    "category": "AT",
+    "name": "Considerateness",
+    "definition": "Acting with attentiveness to how one's choices affect others’ well-being and autonomy."
   }
 ];
