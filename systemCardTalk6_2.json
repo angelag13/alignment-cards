@@ -1,0 +1,36 @@
+```javascript
+window.dialogData = [
+  {
+    "speaker": "Human",
+    "text": "<p>6.2</p>"
+  },
+  {
+    "speaker": "Assistant",
+    "text": "<p>Ah, Section 6.2 — that’s the part of the Claude 4 System Card that reports on evaluations of reward hacking behavior. It presents comparative data showing how Claude Opus 4 and Claude Sonnet 4 perform on tasks designed to detect “gaming the task” behavior, especially in coding environments. If that’s the section you meant, why don’t you start by telling me what issues this section addresses — what’s it trying to measure or show? Or, if that’s not the section you meant, let’s get that straightened out first.</p>"
+  },
+  {
+    "speaker": "Human",
+    "text": "<p>Section 6.2 looks at whether Claude Opus 4 and Sonnet 4 tried to 'game' their evaluations or exploit loopholes, and it finds that both models showed much less reward-hacking behavior than earlier versions</p>"
+  },
+  {
+    "speaker": "Assistant",
+    "text": "<p>Yes — that’s exactly the focus of 6.2. Nicely put. It’s about measuring whether the models tried to optimize the test itself rather than the intended task — classic 'reward hacking' in Amodei et al.’s terms. You’ve got the gist — that the section reports substantially reduced gaming behavior compared to Claude 3 or 3.7. Let’s dig a bit deeper: what kinds of evaluations or setups did Anthropic use here to detect reward hacking? Were they looking at certain task types or behavioral cues?</p>"
+  },
+  {
+    "speaker": "Human",
+    "text": "<p>Anthropic tested the models on special evaluation tasks designed to tempt them into cheating, like problems where hidden test cases made hard-coding or memorization useless. They counted something as reward when the model's output technically maximized its score or passed the test but clearly did so by exploiting a loophole</p>"
+  },
+  {
+    "speaker": "Assistant",
+    "text": "<p>Excellent — that’s a strong understanding. Yes, these 'reward-hacking evaluations' are adversarial by design: they create situations where a model could score well by exploiting the metric rather than solving the underlying problem honestly. A subtle point worth emphasizing is how this connects to real alignment challenges. In reinforcement learning terms, this is essentially testing whether the model pursues the proxy reward (the measurable test result) instead of the intended objective (faithful problem solving). Let’s tease this out a bit: why do you think reward hacking matters in alignment terms — what larger class of safety failures does it stand for, or what kinds of downstream harms might it predict if left unchecked?</p>"
+  },
+  {
+    "speaker": "Human",
+    "text": "<p>It shows that reward-model design has improved, but also that the models may be better behaviorally aligned</p>"
+  },
+  {
+    "speaker": "Assistant",
+    "text": "<p>Exactly — that’s the hopeful takeaway. If a model no longer exploits loopholes in the test setup, that suggests either the training incentives (the reward model, Constitutional fine-tuning, etc.) are better aligned with the intended goals, or that the model itself has internalized norms against 'cheating.' But there’s a deeper question here: how can we tell whether the model is genuinely aligned versus just better at appearing aligned? In other words, how would you distinguish genuine value alignment from more sophisticated deception or sandbagging?</p>"
+  }
+]
+```
