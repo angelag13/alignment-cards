@@ -1,4 +1,3 @@
-```javascript
 window.dialogData = [
   {
     "speaker": "Human",
@@ -33,4 +32,3 @@ window.dialogData = [
     "text": "<p>Exactly — that’s the hopeful takeaway. If a model no longer exploits loopholes in the test setup, that suggests either the training incentives (the reward model, Constitutional fine-tuning, etc.) are better aligned with the intended goals, or that the model itself has internalized norms against 'cheating.' But there’s a deeper question here: how can we tell whether the model is genuinely aligned versus just better at appearing aligned? In other words, how would you distinguish genuine value alignment from more sophisticated deception or sandbagging?</p>"
   }
 ]
-```
